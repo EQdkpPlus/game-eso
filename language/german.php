@@ -1,4 +1,4 @@
-<?php
+﻿<?php
  /*
  * Project:		EQdkp-Plus
  * License:		Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
@@ -24,8 +24,8 @@ $german_array = array(
 		0	=> 'Unbekannt',
 		1	=> 'Drachenritter',
 		2	=> 'Templer',
-		3	=> 'Magier',
-		4	=> 'Wächter',
+		3	=> 'Zauberer',
+		4	=> 'Nachtklinge',
 	),
 	'races' => array(
 		'Hochelfen', 'Waldelfen', 'Khajiit',	// Aldmeri

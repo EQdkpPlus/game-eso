@@ -36,7 +36,7 @@ if(!class_exists('eso')) {
 		protected $lang_file	= array();
 		protected $path			= false;
 		public $lang			= false;
-		public $version			= '0.2';
+		public $version			= '0.2.1';
 
 		/**
 		* Initialises filters

@@ -20,6 +20,11 @@ if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
 }
 $german_array = array(
+	'factions' => array(
+		'aldmeri' 		=> 'Aldmeri-Dominion',
+		'daggerfall' 	=> 'Dolchsturz-Bündnis',
+		'ebonhard'		=> 'Ebenherz-Pakt'
+	),
 	'classes' => array(
 		0	=> 'Unbekannt',
 		1	=> 'Drachenritter',
@@ -28,14 +33,17 @@ $german_array = array(
 		4	=> 'Nachtklinge',
 	),
 	'races' => array(
-		'Hochelfen', 'Waldelfen', 'Khajiit',	// Aldmeri
-		'Bretonen', 'Rothwardonen', 'Orks',		// Dolchsturz
-		'Nord', 'Dunkelelfen', 'Argonier',		// Ebenherz
-	),
-	'factions' => array(
-		'Aldmeri-Dominion',
-		'Dolchsturz-Bündnis',
-		'Ebenherz-Pakt',
+		0 	=> 'Unknown',		
+		1 	=> 'Kaiserliche',	// Collectors edition only
+		2 	=> 'Hochelfen',		// Aldmeri
+		3 	=> 'Waldelfen',		// Aldmeri
+		4 	=> 'Khajiit',		// Aldmeri
+		5 	=> 'Bretonen',		// Dolchsturz
+		6 	=> 'Rothwardonen',	// Dolchsturz
+		7 	=> 'Orks',			// Dolchsturz
+		8 	=> 'Nord',			// Ebenherz
+		9 	=> 'Dunkelelfen',	// Ebenherz
+		10 	=> 'Argonier',		// Ebenherz
 	),
 	'lang' => array(
 		'eso'					=> 'The Elder Scrolls Online',

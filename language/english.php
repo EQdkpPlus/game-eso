@@ -20,6 +20,11 @@ if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
 }
 $english_array =  array(
+	'factions' => array(
+		'aldmeri' 		=> 'Aldmeri-Dominion',
+		'daggerfall' 	=> 'Daggerfall Covenant',
+		'ebonhard'		=> 'Ebonheart Pact'
+	),
 	'classes' => array(
 		0	=> 'Unknown',
 		1	=> 'Dragon Knight',
@@ -28,14 +33,17 @@ $english_array =  array(
 		4	=> 'Nightblade',
 	),
 	'races' => array(
-		'Altmer', 'Bosmer', 'Khajiit',
-		'Bretons', 'Redguards', 'Orcs',
-		'Nord', 'Dunmer', 'Argonians',
-	),
-	'factions' => array(
-		'Aldmeri-Dominion',
-		'Daggerfall Covenant',
-		'Ebonheart Pact',
+		0 	=> 'Unknown',
+		1 	=> 'Imperial',
+		2 	=> 'Altmer',
+		3 	=> 'Bosmer',
+		4 	=> 'Khajiit',
+		5 	=> 'Bretons',
+		6 	=> 'Redguards',
+		7 	=> 'Orcs',
+		8 	=> 'Nord',
+		9 	=> 'Dunmer',
+		10 	=> 'Argonians',
 	),
 	'lang' => array(
 		'eso'					=> 'The Elder Scrolls Online',

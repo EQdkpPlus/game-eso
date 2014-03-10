@@ -22,47 +22,86 @@ if ( !defined('EQDKP_INC') ){
 
 if(!class_exists('eso')) {
 	class eso extends game_generic {
-		public static $shortcuts = array();
+		public $version			= '0.2.2';
 		protected $this_game	= 'eso';
-		protected $types		= array('classes', 'races', 'factions', 'filters');
-		public $icons			= array('classes', 'classes_big', 'races');
+		protected $types		= array('factions', 'races', 'classes', );
 		protected $classes		= array();
+		protected $roles		= array();
 		protected $races		= array();
 		protected $factions		= array();
-		protected $filters		= array();
 		public $langs			= array('english', 'german');
 
+		protected $class_dependencies = array(
+			array(
+				'name'		=> 'faction',
+				'type'		=> 'factions',
+				'admin' 	=> true,
+				'decorate'	=> false,
+				'parent'	=> false,
+			),
+			array(
+				'name'		=> 'race',
+				'type'		=> 'races',
+				'admin'		=> false,
+				'decorate'	=> true,
+				'parent'	=> array(
+					'faction' => array(
+						'aldmeri'		=> array(1,2,3,4),
+						'daggerfall'	=> array(1,5,6,7),
+						'ebonhard'		=> array(1,8,9,10),
+					),
+				),
+			),
+			array(
+				'name'		=> 'class',
+				'type'		=> 'classes',
+				'admin'		=> false,
+				'decorate'	=> true,
+				'primary'	=> true,
+				'colorize'	=> true,
+				'roster'	=> true,
+				'recruitment' => true,
+				'parent'	=> array(
+					'race' => array(
+						0 	=> 'all',	// Unknown
+						1 	=> 'all',	// Imperial
+						2 	=> 'all',	// Altmer
+						3 	=> 'all',	// Bosmer
+						4 	=> 'all',	// Khajiit
+						5 	=> 'all',	// Bretons
+						6 	=> 'all',	// Redguards
+						7 	=> 'all',	// Orcs
+						8 	=> 'all',	// Nord
+						9 	=> 'all',	// Dunmer
+						10 	=> 'all',	// Argonians
+					),
+				),
+			),
+		);
+		
+		/*public $default_roles = array(
+			1 => array(2, 5, 6, 8, 11),
+			2 => array(1, 2, 5, 10, 11),
+			3 => array(2, 3, 4, 6, 8, 9),
+			4 => array(1, 2, 5, 7, 8, 10, 11)
+		);*/
+		
 		protected $glang		= array();
 		protected $lang_file	= array();
-		protected $path			= false;
+		protected $path			= '';
 		public $lang			= false;
-		public $version			= '0.2.1';
+		
+		protected $class_colors = array(
+			1	=> '#C8C8C8',
+			2	=> '#49A03E',
+			3	=> '#3287C1',
+			4	=> '#C66F0A',
+		);
 
-		/**
-		* Initialises filters
-		*
-		* @param array $langs
-		*/
-		protected function load_filters($langs){
-			if(!$this->classes) {
-				$this->load_type('classes', $langs);
-			}
-			foreach($langs as $lang) {
-				$names = $this->classes[$this->lang];
-				$this->filters[$lang][] = array('name' => '-----------', 'value' => false);
-				foreach($names as $id => $name) {
-					$this->filters[$lang][] = array('name' => $name, 'value' => 'class:'.$id);
-				}
-			}
-		}
 		public function get_OnChangeInfos($install=false){
 			//classcolors
 			$info['class_color'] = array(
-				1	=> '#C8C8C8',
-				2	=> '#49A03E',
-				3	=> '#3287C1',
-				4	=> '#C66F0A',
-				5	=> '#CA4E4E',
+				
 			);
 			$info['aq'] = array();
 
@@ -71,7 +110,18 @@ if(!class_exists('eso')) {
 			#}
 			return $info;
 		}
+		
+		public function admin_settings() {
+			$settingsdata_admin = array(
+				'eso_faction'	=> array(
+					'name'		=> 'eso_faction',
+					'type'		=> 'dropdown',
+					'size'		=> '1',
+					'options'	=> registry::register('game')->get('factions'),
+				)
+			);
+			return $settingsdata_admin;
+		}
 	}
 }
-if(version_compare(PHP_VERSION, '5.3.0', '<')) registry::add_const('short_eso', eso::$shortcuts);
 ?>

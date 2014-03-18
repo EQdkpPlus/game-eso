@@ -24,7 +24,7 @@ if(!class_exists('eso')) {
 	class eso extends game_generic {
 		public $version			= '0.2.2';
 		protected $this_game	= 'eso';
-		protected $types		= array('factions', 'races', 'classes', );
+		protected $types		= array('factions', 'races', 'classes');
 		protected $classes		= array();
 		protected $roles		= array();
 		protected $races		= array();

@@ -122,6 +122,37 @@ if(!class_exists('eso')) {
 			);
 			return $settingsdata_admin;
 		}
+		
+		/*
+		 * add professions to array
+		 */
+		public function profilefields(){
+			// Category 'character' is a fixed one! All others are created dynamically!
+			$xml_fields = array(
+				'veterans_rank'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'character',
+					'lang'			=> 'uc_veterans_rank',
+					'options'		=> array('0' => 'uc_vr0', '1' => 'uc_vr1', '2' => 'uc_vr2', '3' => 'uc_vr3', '4' => 'uc_vr4', '5' => 'uc_vr5', '6' => 'uc_vr6', '7' => 'uc_vr7', '8' => 'uc_vr8', '9' => 'uc_vr9', '10' => 'uc_vr10'),
+					'undeletable'	=> true,
+				),
+				'gender'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'character',
+					'lang'			=> 'uc_gender',
+					'options'		=> array('male' => 'uc_male', 'female' => 'uc_female'),
+					'undeletable'	=> true,
+				),
+				'guild'	=> array(
+					'type'			=> 'text',
+					'category'		=> 'character',
+					'lang'			=> 'uc_guild',
+					'size'			=> 40,
+					'undeletable'	=> true,
+				)
+			);
+			return $xml_fields;
+		}
 	}
 }
 ?>

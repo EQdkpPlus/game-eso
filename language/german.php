@@ -46,9 +46,27 @@ $german_array = array(
 		10 	=> 'Argonier',		// Ebenherz
 	),
 	'lang' => array(
-		'eso'					=> 'The Elder Scrolls Online',
-		'pk_tab_fs_esosettings'	=> 'Elder Scrolls Einstellungen',
-		'eso_faction'			=> 'Fraktionen',
+		'eso'						=> 'The Elder Scrolls Online',
+		'pk_tab_fs_esosettings'		=> 'Elder Scrolls Einstellungen',
+		'eso_faction'				=> 'Fraktionen',
+		
+		'uc_gender'					=> 'Geschlecht',
+		'uc_male'					=> 'Männlich',
+		'uc_female'					=> 'Weiblich',
+		'uc_guild'					=> 'Gilde',
+		
+		'uc_veterans_rank'			=> 'Veteranen-Rang',
+		'uc_vr0'					=> 'Kein Veteranen Rang',
+		'uc_vr1'					=> 'Veteranen Rang 1',
+		'uc_vr2'					=> 'Veteranen Rang 2',
+		'uc_vr3'					=> 'Veteranen Rang 3',
+		'uc_vr4'					=> 'Veteranen Rang 4',
+		'uc_vr5'					=> 'Veteranen Rang 5',
+		'uc_vr6'					=> 'Veteranen Rang 6',
+		'uc_vr7'					=> 'Veteranen Rang 7',
+		'uc_vr8'					=> 'Veteranen Rang 8',
+		'uc_vr9'					=> 'Veteranen Rang 9',
+		'uc_vr10'					=> 'Veteranen Rang 10',
 	),
 );
 

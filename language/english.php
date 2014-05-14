@@ -46,9 +46,27 @@ $english_array =  array(
 		10 	=> 'Argonians',
 	),
 	'lang' => array(
-		'eso'					=> 'The Elder Scrolls Online',
-		'pk_tab_fs_esosettings'	=> 'Elder Scrolls Settings',
-		'eso_faction'			=> 'Faction',
+		'eso'						=> 'The Elder Scrolls Online',
+		'pk_tab_fs_esosettings'		=> 'Elder Scrolls Settings',
+		'eso_faction'				=> 'Faction',
+		
+		'uc_gender'					=> 'Gender',
+		'uc_male'					=> 'Male',
+		'uc_female'					=> 'Female',
+		'uc_guild'					=> 'Guild',
+		
+		'uc_veterans_rank'			=> 'Veteran Rank',
+		'uc_vr0'					=> 'No Veteran Rank',
+		'uc_vr1'					=> 'Veteran Rank 1',
+		'uc_vr2'					=> 'Veteran Rank 2',
+		'uc_vr3'					=> 'Veteran Rank 3',
+		'uc_vr4'					=> 'Veteran Rank 4',
+		'uc_vr5'					=> 'Veteran Rank 5',
+		'uc_vr6'					=> 'Veteran Rank 6',
+		'uc_vr7'					=> 'Veteran Rank 7',
+		'uc_vr8'					=> 'Veteran Rank 8',
+		'uc_vr9'					=> 'Veteran Rank 9',
+		'uc_vr10'					=> 'Veteran Rank 10',
 	),
 );
 

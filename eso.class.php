@@ -98,17 +98,8 @@ if(!class_exists('eso')) {
 			4	=> '#C66F0A',
 		);
 
-		public function get_OnChangeInfos($install=false){
-			//classcolors
-			$info['class_color'] = array(
-				
-			);
-			$info['aq'] = array();
-
-			//Do this SQL Query NOT if the Eqdkp is installed -> only @ the first install
-			#if($install){
-			#}
-			return $info;
+		public function install($install=false){
+			
 		}
 		
 		public function admin_settings() {

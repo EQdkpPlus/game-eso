@@ -144,6 +144,10 @@ if(!class_exists('eso')) {
 			);
 			return $xml_fields;
 		}
+		
+		protected function load_filters($langs){
+			return array();
+		}
 	}
 }
 ?>

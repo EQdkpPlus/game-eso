@@ -4,15 +4,14 @@
  * License:		Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
  * Link:		http://creativecommons.org/licenses/by-nc-sa/3.0/
  * -----------------------------------------------------------------------
- * Began:       08.03.2011
- * Date:        $Date$
+ * Date:		$Date$
  * -----------------------------------------------------------------------
- * @author      $Author$
- * @copyright   2006-2008 Corgan - Stefan Knaak | Wallenium & the EQdkp-Plus Developer Team
- * @link        http://eqdkp-plus.com
- * @package     eqdkp-plus
- * @version     $Rev$
- * 
+ * @author		$Author$
+ * @copyright	2006-2014 EQdkp-Plus Developer Team
+ * @link		http://eqdkp-plus.com
+ * @package		eqdkp-plus
+ * @version		$Rev$
+ *
  * $Id$
  */
 
@@ -22,14 +21,15 @@ if ( !defined('EQDKP_INC') ){
 
 if(!class_exists('eso')) {
 	class eso extends game_generic {
-		public $version			= '1.2.0';
-		protected $this_game	= 'eso';
-		protected $types		= array('factions', 'races', 'classes');
-		protected $classes		= array();
-		protected $roles		= array();
-		protected $races		= array();
-		protected $factions		= array();
-		public $langs			= array('english', 'german');
+		protected static $apiLevel	= 20;
+		public $version				= '1.2.0';
+		protected $this_game		= 'eso';
+		protected $types			= array('factions', 'races', 'classes');
+		protected $classes			= array();
+		protected $roles			= array();
+		protected $races			= array();
+		protected $factions			= array();
+		public $langs				= array('english', 'german');
 
 		protected $class_dependencies = array(
 			array(
@@ -98,10 +98,8 @@ if(!class_exists('eso')) {
 			4	=> '#C66F0A',
 		);
 
-		public function install($install=false){
-			
-		}
-		
+		public function install($install=false){}
+
 		public function admin_settings() {
 			$settingsdata_admin = array(
 				'eso_faction'	=> array(
@@ -113,10 +111,7 @@ if(!class_exists('eso')) {
 			);
 			return $settingsdata_admin;
 		}
-		
-		/*
-		 * add professions to array
-		 */
+
 		public function profilefields(){
 			// Category 'character' is a fixed one! All others are created dynamically!
 			$xml_fields = array(
@@ -144,7 +139,7 @@ if(!class_exists('eso')) {
 			);
 			return $xml_fields;
 		}
-		
+
 		protected function load_filters($langs){
 			return array();
 		}

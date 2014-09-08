@@ -100,18 +100,6 @@ if(!class_exists('eso')) {
 
 		public function install($install=false){}
 
-		public function admin_settings() {
-			$settingsdata_admin = array(
-				'eso_faction'	=> array(
-					'name'		=> 'eso_faction',
-					'type'		=> 'dropdown',
-					'size'		=> '1',
-					'options'	=> registry::register('game')->get('factions'),
-				)
-			);
-			return $settingsdata_admin;
-		}
-
 		public function profilefields(){
 			// Category 'character' is a fixed one! All others are created dynamically!
 			$xml_fields = array(

@@ -47,13 +47,16 @@ $english_array =  array(
 	),
 	'lang' => array(
 		'eso'						=> 'The Elder Scrolls Online',
-		'pk_tab_fs_esosettings'		=> 'Elder Scrolls Settings',
-		'eso_faction'				=> 'Faction',
+		'core_sett_fs_gamesettings'	=> 'Elder Scrolls Settings',
+		'uc_faction'				=> 'Faction',
+		'uc_faction_help'			=> 'Select the default faction',
 		
 		'uc_gender'					=> 'Gender',
 		'uc_male'					=> 'Male',
 		'uc_female'					=> 'Female',
 		'uc_guild'					=> 'Guild',
+		'uc_race'					=> 'Race',
+		'uc_class'					=> 'Class',
 		
 		'uc_veterans_rank'			=> 'Veteran Rank',
 		'uc_vr0'					=> 'No Veteran Rank',

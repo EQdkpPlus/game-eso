@@ -109,6 +109,7 @@ if(!class_exists('eso')) {
 					'lang'			=> 'uc_veterans_rank',
 					'options'		=> array('0' => 'uc_vr0', '1' => 'uc_vr1', '2' => 'uc_vr2', '3' => 'uc_vr3', '4' => 'uc_vr4', '5' => 'uc_vr5', '6' => 'uc_vr6', '7' => 'uc_vr7', '8' => 'uc_vr8', '9' => 'uc_vr9', '10' => 'uc_vr10'),
 					'undeletable'	=> true,
+					'tolang'		=> true
 				),
 				'gender'	=> array(
 					'type'			=> 'dropdown',
@@ -116,6 +117,7 @@ if(!class_exists('eso')) {
 					'lang'			=> 'uc_gender',
 					'options'		=> array('male' => 'uc_male', 'female' => 'uc_female'),
 					'undeletable'	=> true,
+					'tolang'		=> true
 				),
 				'guild'	=> array(
 					'type'			=> 'text',

@@ -61,6 +61,7 @@ $german_array = array(
 		'uc_guild'					=> 'Gilde',
 		'uc_race'					=> 'Rasse',
 		'uc_class'					=> 'Klasse',
+                'uc_level'                                      => 'Level',
 		
 		'uc_veterans_rank'			=> 'Veteranen-Rang',
 		'uc_vr0'					=> 'Kein Veteranen-Rang',

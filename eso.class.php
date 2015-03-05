@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('eso')) {
 	class eso extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.3.1';
+		public $version				= '1.3.2';
 		protected $this_game		= 'eso';
 		protected $types			= array('factions', 'races', 'classes');
 		protected $classes			= array();
@@ -53,6 +53,7 @@ if(!class_exists('eso')) {
 						'aldmeri'		=> array(1,2,3,4),
 						'daggerfall'	=> array(1,5,6,7),
 						'ebonhard'		=> array(1,8,9,10),
+						'all'		=> array(1,2,3,4,5,6,7,8,9,10),
 					),
 				),
 			),
@@ -111,7 +112,7 @@ if(!class_exists('eso')) {
 					'type'			=> 'dropdown',
 					'category'		=> 'character',
 					'lang'			=> 'uc_veterans_rank',
-					'options'		=> array('0' => 'uc_vr0', '1' => 'uc_vr1', '2' => 'uc_vr2', '3' => 'uc_vr3', '4' => 'uc_vr4', '5' => 'uc_vr5', '6' => 'uc_vr6', '7' => 'uc_vr7', '8' => 'uc_vr8', '9' => 'uc_vr9', '10' => 'uc_vr10'),
+					'options'		=> array('0' => 'uc_vr0', '1' => 'uc_vr1', '2' => 'uc_vr2', '3' => 'uc_vr3', '4' => 'uc_vr4', '5' => 'uc_vr5', '6' => 'uc_vr6', '7' => 'uc_vr7', '8' => 'uc_vr8', '9' => 'uc_vr9', '10' => 'uc_vr10', '11' => 'uc_vr11', '12' => 'uc_vr12', '13' => 'uc_vr13', '14' => 'uc_vr14'),
 					'undeletable'	=> true,
 					'tolang'		=> true
 				),

@@ -26,7 +26,8 @@ $german_array = array(
 	'factions' => array(
 		'aldmeri' 		=> 'Aldmeri-Dominion',
 		'daggerfall' 	=> 'Dolchsturz-Bündnis',
-		'ebonhard'		=> 'Ebenherz-Pakt'
+		'ebonhard'		=> 'Ebenherz-Pakt',
+		'all'		=> 'Alle Fraktionen'
 	),
 	'classes' => array(
 		0	=> 'Unbekannt',
@@ -62,19 +63,21 @@ $german_array = array(
 		'uc_class'					=> 'Klasse',
 		
 		'uc_veterans_rank'			=> 'Veteranen-Rang',
-		'uc_vr0'					=> 'Kein Veteranen Rang',
-		'uc_vr1'					=> 'Veteranen Rang 1',
-		'uc_vr2'					=> 'Veteranen Rang 2',
-		'uc_vr3'					=> 'Veteranen Rang 3',
-		'uc_vr4'					=> 'Veteranen Rang 4',
-		'uc_vr5'					=> 'Veteranen Rang 5',
-		'uc_vr6'					=> 'Veteranen Rang 6',
-		'uc_vr7'					=> 'Veteranen Rang 7',
-		'uc_vr8'					=> 'Veteranen Rang 8',
-		'uc_vr9'					=> 'Veteranen Rang 9',
-		'uc_vr10'					=> 'Veteranen Rang 10',
-		'uc_vr11'					=> 'Veteranen Rang 11',
-		'uc_vr12'					=> 'Veteranen Rang 12',
+		'uc_vr0'					=> 'Kein Veteranen-Rang',
+		'uc_vr1'					=> 'Veteranen-Rang 1',
+		'uc_vr2'					=> 'Veteranen-Rang 2',
+		'uc_vr3'					=> 'Veteranen-Rang 3',
+		'uc_vr4'					=> 'Veteranen-Rang 4',
+		'uc_vr5'					=> 'Veteranen-Rang 5',
+		'uc_vr6'					=> 'Veteranen-Rang 6',
+		'uc_vr7'					=> 'Veteranen-Rang 7',
+		'uc_vr8'					=> 'Veteranen-Rang 8',
+		'uc_vr9'					=> 'Veteranen-Rang 9',
+		'uc_vr10'					=> 'Veteranen-Rang 10',
+		'uc_vr11'					=> 'Veteranen-Rang 11',
+		'uc_vr12'					=> 'Veteranen-Rang 12',
+		'uc_vr13'					=> 'Veteranen-Rang 13',
+		'uc_vr14'					=> 'Veteranen-Rang 14',
 	),
 );
 

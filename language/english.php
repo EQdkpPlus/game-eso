@@ -26,7 +26,8 @@ $english_array =  array(
 	'factions' => array(
 		'aldmeri' 		=> 'Aldmeri-Dominion',
 		'daggerfall' 	=> 'Daggerfall Covenant',
-		'ebonhard'		=> 'Ebonheart Pact'
+		'ebonhard'		=> 'Ebonheart Pact',
+		'all'		=> 'All factions'
 	),
 	'classes' => array(
 		0	=> 'Unknown',
@@ -75,6 +76,8 @@ $english_array =  array(
 		'uc_vr10'					=> 'Veteran Rank 10',
 		'uc_vr11'					=> 'Veteran Rank 11',
 		'uc_vr12'					=> 'Veteran Rank 12',
+		'uc_vr13'					=> 'Veteran Rank 13',
+		'uc_vr14'					=> 'Veteran Rank 14',
 	),
 );
 

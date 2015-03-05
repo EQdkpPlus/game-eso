@@ -147,6 +147,40 @@ if(!class_exists('eso')) {
 		protected function load_filters($langs){
 			return array();
 		}
+
+		public function get_class_dependencies() {
+			$pf_faction = $this->pdh->get('profile_fields', 'fields', array('faction'));
+			if($this->config->get('uc_one_faction')) {
+				$this->class_dependencies[0]['admin'] = true;
+				// hide faction-field in profile-settings
+				if($pf_faction['type'] != 'hidden') {
+					$this->db->query("UPDATE __member_profilefields SET type = 'hidden' WHERE name='faction';");
+					$this->pdh->enqueue_hook('game_update');
+					$this->pdh->process_hook_queue();
+				}
+			} else {
+				// set type of faction-field back to dropdown
+				if($pf_faction['type'] != 'dropdown') {
+					$this->db->query("UPDATE __member_profilefields SET type = 'dropdown' WHERE name='faction';");
+					$this->pdh->enqueue_hook('game_update');
+					$this->pdh->process_hook_queue();
+				}
+			}
+			return $this->class_dependencies;
+		}
+
+		public function admin_settings() {
+			return array(
+					'uc_one_faction' => array(
+							'type' => 'radio',
+							'lang' => 'uc_one_faction',
+					),
+					'uc_only_normal_faction_races' => array(
+							'type' => 'radio',
+							'lang' => 'uc_only_normal_faction_races',
+					),
+			);
+		}
 	}
 }
 ?>

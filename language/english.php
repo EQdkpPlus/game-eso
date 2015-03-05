@@ -52,6 +52,7 @@ $english_array =  array(
 	'lang' => array(
 		'eso'						=> 'The Elder Scrolls Online',
 		'core_sett_fs_gamesettings'	=> 'Elder Scrolls Settings',
+		'uc_one_faction'			=> 'Restrict the race selection to a specific faction?',
 		'uc_faction'				=> 'Faction',
 		'uc_faction_help'			=> 'Select the default faction',
 		

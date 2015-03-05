@@ -52,6 +52,7 @@ $german_array = array(
 	'lang' => array(
 		'eso'						=> 'The Elder Scrolls Online',
 		'core_sett_fs_gamesettings'	=> 'Elder Scrolls Einstellungen',
+		'uc_one_faction'			=> 'Rassenauswahl auf bestimmte Fraktion einschränken?',
 		'uc_faction'				=> 'Fraktion',
 		'uc_faction_help'			=> 'WÃ¤hle die Standard-Fraktion',
 		

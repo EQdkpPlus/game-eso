@@ -61,6 +61,7 @@ $english_array =  array(
 		'uc_guild'					=> 'Guild',
 		'uc_race'					=> 'Race',
 		'uc_class'					=> 'Class',
+        	'uc_level'                                      => 'Level',
 		
 		'uc_veterans_rank'			=> 'Veteran Rank',
 		'uc_vr0'					=> 'No Veteran Rank',

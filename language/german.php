@@ -36,7 +36,7 @@ $german_array = array(
 		4	=> 'Nachtklinge',
 	),
 	'races' => array(
-		0 	=> 'Unknown',		
+		0 	=> 'Unbekannt',		
 		1 	=> 'Kaiserliche',	// Collectors edition only
 		2 	=> 'Hochelfen',		// Aldmeri
 		3 	=> 'Waldelfen',		// Aldmeri

@@ -27,7 +27,6 @@ $english_array =  array(
 		'aldmeri' 		=> 'Aldmeri-Dominion',
 		'daggerfall' 	=> 'Daggerfall Covenant',
 		'ebonhard'		=> 'Ebonheart Pact',
-		'all'		=> 'All factions'
 	),
 	'classes' => array(
 		0	=> 'Unknown',

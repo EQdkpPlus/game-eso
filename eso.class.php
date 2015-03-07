@@ -40,7 +40,7 @@ if(!class_exists('eso')) {
 				'name'		=> 'faction',
 				'type'		=> 'factions',
 				'admin' 	=> false,
-				'decorate'	=> false,
+				'decorate'	=> true,
 				'parent'	=> false,
 			),
 			array(
@@ -117,15 +117,15 @@ if(!class_exists('eso')) {
 					'undeletable'	=> true,
 					'tolang'		=> true
 				),
-                                'level' => array(
-                                        'type'                  => 'spinner',
-                                        'category'              => 'character',
-                                        'lang'                  => 'uc_level',
-                                        'max'                   => 50,
-                                        'min'                   => 1,
-                                        'undeletable'   => true,
-                                        'sort'                  => 4
-                                ),
+				'level' => array(
+				'type'				=> 'spinner',
+				'category'			=> 'character',
+				'lang'				=> 'uc_level',
+				'max'				=> 50,
+				'min'				=> 1,
+				'undeletable'		=> true,
+				'sort'				=> 4
+				),
 				'guild'	=> array(
 					'type'			=> 'text',
 					'category'		=> 'character',

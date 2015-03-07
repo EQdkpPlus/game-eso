@@ -27,7 +27,6 @@ $german_array = array(
 		'aldmeri' 		=> 'Aldmeri-Dominion',
 		'daggerfall' 	=> 'Dolchsturz-Bündnis',
 		'ebonhard'		=> 'Ebenherz-Pakt',
-		'all'		=> 'Alle Fraktionen'
 	),
 	'classes' => array(
 		0	=> 'Unbekannt',

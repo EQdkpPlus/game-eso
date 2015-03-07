@@ -40,7 +40,7 @@ if(!class_exists('eso')) {
 				'name'		=> 'faction',
 				'type'		=> 'factions',
 				'admin' 	=> false,
-				'decorate'	=> true,
+				'decorate'	=> false,
 				'parent'	=> false,
 			),
 			array(

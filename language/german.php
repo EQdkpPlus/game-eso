@@ -52,7 +52,6 @@ $german_array = array(
 		'eso'						=> 'The Elder Scrolls Online',
 		'core_sett_fs_gamesettings'	=> 'Elder Scrolls Einstellungen',
 		'uc_faction'				=> 'Fraktion',
-		'uc_faction_help'			=> 'Wähle die Standard-Fraktion',
 		
 		'uc_gender'					=> 'Geschlecht',
 		'uc_male'					=> 'Männlich',
@@ -60,7 +59,7 @@ $german_array = array(
 		'uc_guild'					=> 'Gilde',
 		'uc_race'					=> 'Rasse',
 		'uc_class'					=> 'Klasse',
-                'uc_level'                                      => 'Level',
+		'uc_level'					=> 'Level',
 		
 		'uc_veterans_rank'			=> 'Veteranen-Rang',
 		'uc_vr0'					=> 'Kein Veteranen-Rang',

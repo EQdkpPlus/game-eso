@@ -27,7 +27,6 @@ $german_array = array(
 		'aldmeri' 		=> 'Aldmeri-Dominion',
 		'daggerfall' 	=> 'Dolchsturz-Bündnis',
 		'ebonhard'		=> 'Ebenherz-Pakt',
-		'all'		=> 'Alle Fraktionen'
 	),
 	'classes' => array(
 		0	=> 'Unbekannt',
@@ -37,7 +36,7 @@ $german_array = array(
 		4	=> 'Nachtklinge',
 	),
 	'races' => array(
-		0 	=> 'Unknown',		
+		0 	=> 'Unbekannt',		
 		1 	=> 'Kaiserliche',	// Collectors edition only
 		2 	=> 'Hochelfen',		// Aldmeri
 		3 	=> 'Waldelfen',		// Aldmeri
@@ -53,7 +52,6 @@ $german_array = array(
 		'eso'						=> 'The Elder Scrolls Online',
 		'core_sett_fs_gamesettings'	=> 'Elder Scrolls Einstellungen',
 		'uc_faction'				=> 'Fraktion',
-		'uc_faction_help'			=> 'Wähle die Standard-Fraktion',
 		
 		'uc_gender'					=> 'Geschlecht',
 		'uc_male'					=> 'Männlich',
@@ -61,6 +59,7 @@ $german_array = array(
 		'uc_guild'					=> 'Gilde',
 		'uc_race'					=> 'Rasse',
 		'uc_class'					=> 'Klasse',
+		'uc_level'					=> 'Level',
 		
 		'uc_veterans_rank'			=> 'Veteranen-Rang',
 		'uc_vr0'					=> 'Kein Veteranen-Rang',

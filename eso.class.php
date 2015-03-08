@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('eso')) {
 	class eso extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.3.2';
+		public $version				= '1.4.0';
 		protected $this_game		= 'eso';
 		protected $types			= array('factions', 'races', 'classes');
 		protected $classes			= array();
@@ -39,7 +39,7 @@ if(!class_exists('eso')) {
 			array(
 				'name'		=> 'faction',
 				'type'		=> 'factions',
-				'admin' 	=> true,
+				'admin' 	=> false,
 				'decorate'	=> false,
 				'parent'	=> false,
 			),
@@ -48,14 +48,7 @@ if(!class_exists('eso')) {
 				'type'		=> 'races',
 				'admin'		=> false,
 				'decorate'	=> true,
-				'parent'	=> array(
-					'faction' => array(
-						'aldmeri'		=> array(1,2,3,4),
-						'daggerfall'	=> array(1,5,6,7),
-						'ebonhard'		=> array(1,8,9,10),
-						'all'		=> array(1,2,3,4,5,6,7,8,9,10),
-					),
-				),
+				'parent'	=> false,
 			),
 			array(
 				'name'		=> 'class',
@@ -124,6 +117,15 @@ if(!class_exists('eso')) {
 					'undeletable'	=> true,
 					'tolang'		=> true
 				),
+				'level' => array(
+				'type'				=> 'spinner',
+				'category'			=> 'character',
+				'lang'				=> 'uc_level',
+				'max'				=> 50,
+				'min'				=> 1,
+				'undeletable'		=> true,
+				'sort'				=> 4
+				),
 				'guild'	=> array(
 					'type'			=> 'text',
 					'category'		=> 'character',
@@ -138,6 +140,7 @@ if(!class_exists('eso')) {
 		protected function load_filters($langs){
 			return array();
 		}
+
 	}
 }
 ?>

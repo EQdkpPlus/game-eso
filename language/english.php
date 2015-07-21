@@ -78,7 +78,7 @@ $english_array =  array(
 		'uc_vr13'					=> 'Veteran Rank 13',
 		'uc_vr14'					=> 'Veteran Rank 14',
 		'uc_vr15'					=> 'Veteran Rank 15',
-		'uc_vr16'					=> 'Veteran Rank 16'
+		'uc_vr16'					=> 'Veteran Rank 16',
 	),
 );
 

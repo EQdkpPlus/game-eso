@@ -77,6 +77,8 @@ $german_array = array(
 		'uc_vr12'					=> 'Veteranen-Rang 12',
 		'uc_vr13'					=> 'Veteranen-Rang 13',
 		'uc_vr14'					=> 'Veteranen-Rang 14',
+		'uc_vr15'					=> 'Veteranen-Rang 15',
+		'uc_vr16'					=> 'Veteranen-Rang 16',
 	),
 );
 

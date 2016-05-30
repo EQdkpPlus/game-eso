@@ -36,7 +36,7 @@ $german_array = array(
 		4	=> 'Nachtklinge',
 	),
 	'races' => array(
-		0 	=> 'Unbekannt',		
+		0 	=> 'Unbekannt',
 		1 	=> 'Kaiserliche',	// Collectors edition only
 		2 	=> 'Hochelfen',		// Aldmeri
 		3 	=> 'Waldelfen',		// Aldmeri
@@ -52,7 +52,7 @@ $german_array = array(
 		'eso'						=> 'The Elder Scrolls Online',
 		'core_sett_fs_gamesettings'	=> 'Elder Scrolls Einstellungen',
 		'uc_faction'				=> 'Fraktion',
-		
+
 		'uc_gender'					=> 'Geschlecht',
 		'uc_male'					=> 'Männlich',
 		'uc_female'					=> 'Weiblich',
@@ -60,25 +60,7 @@ $german_array = array(
 		'uc_race'					=> 'Rasse',
 		'uc_class'					=> 'Klasse',
 		'uc_level'					=> 'Level',
-		
-		'uc_veterans_rank'			=> 'Veteranen-Rang',
-		'uc_vr0'					=> 'Kein Veteranen-Rang',
-		'uc_vr1'					=> 'Veteranen-Rang 1',
-		'uc_vr2'					=> 'Veteranen-Rang 2',
-		'uc_vr3'					=> 'Veteranen-Rang 3',
-		'uc_vr4'					=> 'Veteranen-Rang 4',
-		'uc_vr5'					=> 'Veteranen-Rang 5',
-		'uc_vr6'					=> 'Veteranen-Rang 6',
-		'uc_vr7'					=> 'Veteranen-Rang 7',
-		'uc_vr8'					=> 'Veteranen-Rang 8',
-		'uc_vr9'					=> 'Veteranen-Rang 9',
-		'uc_vr10'					=> 'Veteranen-Rang 10',
-		'uc_vr11'					=> 'Veteranen-Rang 11',
-		'uc_vr12'					=> 'Veteranen-Rang 12',
-		'uc_vr13'					=> 'Veteranen-Rang 13',
-		'uc_vr14'					=> 'Veteranen-Rang 14',
-		'uc_vr15'					=> 'Veteranen-Rang 15',
-		'uc_vr16'					=> 'Veteranen-Rang 16',
+		'uc_championspoints'		=> 'Championpunkte',
 	),
 );
 

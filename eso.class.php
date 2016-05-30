@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('eso')) {
 	class eso extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.4.1';
+		public $version				= '1.5.0';
 		protected $this_game		= 'eso';
 		protected $types			= array('factions', 'races', 'classes');
 		protected $classes			= array();
@@ -76,19 +76,19 @@ if(!class_exists('eso')) {
 				),
 			),
 		);
-		
+
 		/*public $default_roles = array(
 			1 => array(2, 5, 6, 8, 11),
 			2 => array(1, 2, 5, 10, 11),
 			3 => array(2, 3, 4, 6, 8, 9),
 			4 => array(1, 2, 5, 7, 8, 10, 11)
 		);*/
-		
+
 		protected $glang		= array();
 		protected $lang_file	= array();
 		protected $path			= '';
 		public $lang			= false;
-		
+
 		protected $class_colors = array(
 			1	=> '#C8C8C8',
 			2	=> '#49A03E',
@@ -101,13 +101,13 @@ if(!class_exists('eso')) {
 		public function profilefields(){
 			// Category 'character' is a fixed one! All others are created dynamically!
 			$xml_fields = array(
-				'veterans_rank'	=> array(
-					'type'			=> 'dropdown',
+				'championspoints'	=> array(
+					'type'			=> 'spinner',
 					'category'		=> 'character',
-					'lang'			=> 'uc_veterans_rank',
-					'options'		=> array('0' => 'uc_vr0', '1' => 'uc_vr1', '2' => 'uc_vr2', '3' => 'uc_vr3', '4' => 'uc_vr4', '5' => 'uc_vr5', '6' => 'uc_vr6', '7' => 'uc_vr7', '8' => 'uc_vr8', '9' => 'uc_vr9', '10' => 'uc_vr10', '11' => 'uc_vr11', '12' => 'uc_vr12', '13' => 'uc_vr13', '14' => 'uc_vr14', '15' => 'uc_vr15', '16' => 'uc_vr16'),
+					'lang'			=> 'uc_championspoints',
+					'max'			=> 9999,
+					'min'			=> 1,
 					'undeletable'	=> true,
-					'tolang'		=> true
 				),
 				'gender'	=> array(
 					'type'			=> 'dropdown',
@@ -118,13 +118,13 @@ if(!class_exists('eso')) {
 					'tolang'		=> true
 				),
 				'level' => array(
-				'type'				=> 'spinner',
-				'category'			=> 'character',
-				'lang'				=> 'uc_level',
-				'max'				=> 50,
-				'min'				=> 1,
-				'undeletable'		=> true,
-				'sort'				=> 4
+					'type'			=> 'spinner',
+					'category'		=> 'character',
+					'lang'			=> 'uc_level',
+					'max'			=> 50,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 4
 				),
 				'guild'	=> array(
 					'type'			=> 'text',
@@ -140,6 +140,21 @@ if(!class_exists('eso')) {
 		protected function load_filters($langs){
 			return array();
 		}
+
+		/**
+		 * Per game data for the calendar Tooltip
+		 */
+		public function calendar_membertooltip($intCharID){
+			$guild				= $this->pdh->get('member', 'profile_field', array($intCharID, 'guild'));
+			$championspoints	= $this->pdh->get('member', 'profile_field', array($intCharID, 'championspoints'));
+
+			// additional information such as guild
+			return array(
+				$this->game->glang('uc_guild').': '.$guild,
+				$this->game->glang('uc_championspoints').': ['.$championspoints.']',
+			);
+		}
+
 
 	}
 }

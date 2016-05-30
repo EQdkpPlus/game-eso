@@ -52,7 +52,7 @@ $english_array =  array(
 		'eso'						=> 'The Elder Scrolls Online',
 		'core_sett_fs_gamesettings'	=> 'Elder Scrolls Settings',
 		'uc_faction'				=> 'Faction',
-		
+
 		'uc_gender'					=> 'Gender',
 		'uc_male'					=> 'Male',
 		'uc_female'					=> 'Female',
@@ -60,25 +60,7 @@ $english_array =  array(
 		'uc_race'					=> 'Race',
 		'uc_class'					=> 'Class',
 		'uc_level'					=> 'Level',
-		
-		'uc_veterans_rank'			=> 'Veteran Rank',
-		'uc_vr0'					=> 'No Veteran Rank',
-		'uc_vr1'					=> 'Veteran Rank 1',
-		'uc_vr2'					=> 'Veteran Rank 2',
-		'uc_vr3'					=> 'Veteran Rank 3',
-		'uc_vr4'					=> 'Veteran Rank 4',
-		'uc_vr5'					=> 'Veteran Rank 5',
-		'uc_vr6'					=> 'Veteran Rank 6',
-		'uc_vr7'					=> 'Veteran Rank 7',
-		'uc_vr8'					=> 'Veteran Rank 8',
-		'uc_vr9'					=> 'Veteran Rank 9',
-		'uc_vr10'					=> 'Veteran Rank 10',
-		'uc_vr11'					=> 'Veteran Rank 11',
-		'uc_vr12'					=> 'Veteran Rank 12',
-		'uc_vr13'					=> 'Veteran Rank 13',
-		'uc_vr14'					=> 'Veteran Rank 14',
-		'uc_vr15'					=> 'Veteran Rank 15',
-		'uc_vr16'					=> 'Veteran Rank 16',
+		'uc_championspoints'		=> 'Champions Points',
 	),
 );
 

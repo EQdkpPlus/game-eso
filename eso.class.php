@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('eso')) {
 	class eso extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.5.1';
+		public $version				= '1.5.2';
 		protected $this_game		= 'eso';
 		protected $types			= array('factions', 'races', 'classes');
 		protected $classes			= array();

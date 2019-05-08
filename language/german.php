@@ -35,6 +35,7 @@ $german_array = array(
 		3	=> 'Zauberer',
 		4	=> 'Nachtklinge',
 		5	=> 'Hüter',
+		6	=> 'Nekromant',
 	),
 	'races' => array(
 		0 	=> 'Unbekannt',
